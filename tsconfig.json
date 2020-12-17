@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "es5",
+      "es6",
+      "dom"
+    ]
+  },
+  "include": [
+    "./src/**/*",
+    "./webpack/**/*"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "reportFiles": [
+      "./src/**/*"
+    ]
+  }
+}
