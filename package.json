@@ -1,7 +1,7 @@
 {
   "name": "react-webpack-ts-tailwind-boilerplate",
   "description": "Starter kit for React, TailwindCSS, Webpack (with Hot Module Replacement), TypeScript and Babel.",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Jordan Rey",
   "license": "MIT",
   "repository": {
@@ -13,11 +13,15 @@
   },
   "homepage": "https://github.com/jordanamr/react-webpack-ts-tailwind-boilerplate",
   "scripts": {
-    "build": "yarn run clean-dist && cross-env NODE_ENV=production webpack -p --config=webpack/webpack.prod.config.ts",
+    "build": "yarn run clean-dist && cross-env NODE_ENV=production webpack -p --config=config/webpack/webpack.prod.config.ts",
     "clean-dist": "rimraf dist/*",
     "lint": "eslint './src/**/*.{ts,tsx}' --quiet",
     "start": "yarn run start:dev",
-    "start:dev": "cross-env NODE_ENV=development webpack-dev-server --config=webpack/webpack.dev.config.ts"
+    "start:dev": "cross-env NODE_ENV=development webpack-dev-server --config=config/webpack/webpack.dev.config.ts"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -34,7 +38,7 @@
     "@typescript-eslint/eslint-plugin": "^4.10.0",
     "@typescript-eslint/parser": "^4.10.0",
     "autoprefixer": "^10.1.0",
-    "awesome-typescript-loader": "5.2.1",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.2",
     "babel-preset-minify": "^0.5.1",
     "cross-env": "^7.0.3",
@@ -70,8 +74,16 @@
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
   },
-  "dependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+  "keywords": [
+    "react",
+    "webpack",
+    "typescript",
+    "babel",
+    "postcss",
+    "sass",
+    "hmr",
+    "boilerplate",
+    "tailwind",
+    "tailwindcss"
+  ]
 }

@@ -16,7 +16,7 @@
   },
   "include": [
     "./src/**/*",
-    "./webpack/**/*"
+    "./config/webpack/**/*"
   ],
   "awesomeTypescriptLoaderOptions": {
     "reportFiles": [

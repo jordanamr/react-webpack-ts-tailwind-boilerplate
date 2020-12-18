@@ -37,7 +37,7 @@ class App extends React.Component<IProps, IState> {
           <div className="flex items-center justify-center h-screen">
             <div className="container mx-60 py-4 bg-white rounded shadow-lg bg-gray-100">
               <div className="px-12 py-6">
-                <img src={reactLogo} className="object-fill h-32 w-full"></img>
+                <img src={reactLogo} className="object-fill h-32 w-full" />
                 <h1 className="text-center font-normal text-3xl text-gray-800 leading-loose my-3 w-full">
                   {content} ({count})
                 </h1>

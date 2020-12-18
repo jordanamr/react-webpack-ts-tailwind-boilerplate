@@ -9,7 +9,7 @@ const config: webpack.Configuration = merge(commonConfig, {
   entry: "./index.tsx",
   output: {
     filename: "js/bundle.[hash].min.js",
-    path: path.resolve(__dirname, "../dist"),
+    path: path.resolve(__dirname, "../../dist"),
     publicPath: "/",
   },
   devtool: "source-map",

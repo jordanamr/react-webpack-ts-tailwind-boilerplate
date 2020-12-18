@@ -8,21 +8,25 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
-  context: path.resolve(__dirname, "../src"),
+  context: path.resolve(__dirname, "../../src"),
   module: {
     rules: [
       {
         test: /\.js$/,
-        use: ["babel-loader", "source-map-loader"],
+        loaders: ["babel-loader", "source-map-loader"],
         exclude: /node_modules/,
       },
       {
         test: /\.tsx?$/,
-        use: ["babel-loader", "awesome-typescript-loader"],
+        loaders: ["babel-loader", "awesome-typescript-loader"],
       },
       {
         test: /\.css$/,
-        use: ["style-loader", { loader: "css-loader", options: { importLoaders: 1 } }, "postcss-loader"],
+        loaders: [
+          "style-loader",
+          { loader: "css-loader", options: { importLoaders: 1 } },
+          { loader: "postcss-loader", options: { postcssOptions: { config: path.resolve(__dirname, "../") } } },
+        ],
       },
       {
         test: /\.(scss|sass)$/,
@@ -30,7 +34,7 @@ const config: webpack.Configuration = {
           "style-loader",
           { loader: "css-loader", options: { importLoaders: 1 } },
           "sass-loader",
-          "postcss-loader",
+          { loader: "postcss-loader", options: { postcssOptions: { config: path.resolve(__dirname, "../") } } },
         ],
       },
       {
