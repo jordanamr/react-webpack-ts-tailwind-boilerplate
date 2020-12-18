@@ -2,7 +2,8 @@
 > Minimal boilerplate with hot module replacement (HMR) for rapid development.
 
 * **[React](https://facebook.github.io/react/)** (17.x)
-* **[Webpack](https://webpack.js.org/)** (4.x)
+* **[Webpack](https://webpack.js.org/)** (5.x)
+* **[Babel](https://babeljs.io/)** (7.x)
 * **[TypeScript](https://www.typescriptlang.org/)** (4.1.x)
 * **[Tailwind CSS](https://tailwindcss.com/)** (2.x)
 * [Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/) ([React Hot Loader](https://github.com/gaearon/react-hot-loader))
