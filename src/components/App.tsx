@@ -1,5 +1,5 @@
 import * as React from "react";
-import { hot } from "react-hot-loader";
+import { hot } from "react-hot-loader/root";
 import "../assets/scss/tailwind.scss";
 import "../assets/scss/app.scss";
 import reactLogo from "../assets/img/react_logo.svg";
@@ -60,4 +60,4 @@ class App extends React.Component<IProps, IState> {
   }
 }
 
-export default hot(module)(App);
+export default hot(App);
